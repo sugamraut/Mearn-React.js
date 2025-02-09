@@ -3,6 +3,7 @@ import './App.css'
 import Home from './page/blog/home'
 import About from './page/blog/About'
 import SingleBlog from './page/blog/SingleBlog'
+import CreateBlog from './page/blog/CreateBlog'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
      <BrowserRouter>
      <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/create' element={<CreateBlog/>} />
       <Route path='/about' element={<About/>}/>
       <Route path='/blog/:id' element={<SingleBlog/>}/>
      </Routes>
