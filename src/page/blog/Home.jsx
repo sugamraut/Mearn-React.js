@@ -6,7 +6,7 @@ import axios from "axios";
 function Home() {
   const [blogs,setBlogs] = useState([])
     const fetchBlogs = async ()=>{
-      const response =  await axios.get("https://mern-node-9z0p.onrender.com/blog")
+      const response =  await axios.get("https://mern-node-lb79.onrender.com/blog")
       setBlogs(response.data.data)
     }
 
